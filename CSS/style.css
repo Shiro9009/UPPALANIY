@@ -5,7 +5,7 @@
 }
 
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 
 a {
@@ -40,7 +40,7 @@ span {
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -172,8 +172,10 @@ span {
 
 .catalog-list {
     display: grid;
-    grid-template-columns: repeat(5, auto);
-    margin-bottom: 50px;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 30px;
+    margin:0 auto 50px;
+    width: 1290px;
 }
 
 .catalog-link {
@@ -184,7 +186,7 @@ span {
     font-weight: 600;
 }
 
-.popular-author{
+.popular-author {
     background-color: #E58C0E;
 }
 
@@ -202,4 +204,12 @@ span {
 
 .footer {
     background-color: #22211f;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 1.3rem;
+    text-align: center;
 }
