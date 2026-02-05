@@ -100,7 +100,7 @@ span {
 }
 
 .start {
-    margin: 90px 0 650px;
+    margin: 90px 0 450px;
 }
 
 .start-text {
@@ -181,23 +181,90 @@ span {
 .catalog-link {
     display: block;
     margin: -25px 0 30px;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     color: #22211f;
     font-weight: 600;
+    border-bottom: 3px solid #000;
 }
 
 .popular-author {
     background-color: #E58C0E;
 }
 
+.catalog-cource-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 60px;
+}
 
+.catalog-cource-list {
+    display: flex;
+    justify-content: space-evenly;
+    margin:30px 0 50px;
+    list-style: none;
+    font-size: 1.9rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #E58C0E;
+}
 
+.catalog-cource-list-link {
+    transition: all 0.3s;
+}
 
+.catalog-cource-list-link:hover {
+    color: #F2D475;
+}
 
+.popular-author-title {
+    text-transform: uppercase;
+    padding-top: 20px;
+    color: #F2D475;
+}
 
+.popular-author {
+    background-image: url('../IMAGES/author-background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 1px 80px 1px #0d0d0c;
+    padding-bottom: 70px;
+}
 
+.popular-author-list {
+    margin: 0 auto;
+}
 
+.popular-author-list-scroll {
+    display: flex;
+    justify-content: space-between;
+}
 
+.popular-author-item {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden-box {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.photo-author {
+    width: 100%; 
+}
+
+.popular-author-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
 
 
 
