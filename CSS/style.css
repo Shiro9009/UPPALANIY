@@ -8,6 +8,8 @@ html {
     scroll-behavior: smooth;
 }
 
+@view-transition { navigation: auto; }
+
 a {
     text-decoration: none;
     color: #fff;
@@ -44,6 +46,11 @@ span {
     margin: 0 auto;
 }
 
+.container-course {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+}
 
 .header-inner {
     color: #fff;
@@ -386,7 +393,81 @@ span {
     box-shadow: 0 0 10px 0 #E58C0E;
 }
 
+.reg-btn:hover {
+    transition: all 0.6s;
+    border: 1px solid #E58C0E;
+    box-shadow: 0 0 10px 0 #E58C0E;
+}
 
+.header {
+    background-color: #22211f;
+}
+
+.zero {
+    padding: 10px;
+}
+
+.aside {
+    background-color: #22211f;
+    border: 1px solid #f8a723;
+    min-height: 100vh;
+    border-bottom: none;
+}
+
+.aside-item {
+    list-style: none;
+    padding: 15px;
+    width: 270px;
+    font-size: 1.2rem;
+}
+
+.aside-item:hover {
+    background-color: #3d3d3d;
+    transition: all 0.4s;
+}
+
+.course-info {
+    width: 100%;
+    background-color: #f8a723;
+}
+
+.background-color-zero {
+    background-color: #22211f;
+}
+
+.name-chapter {
+    margin-top: 5px;
+    border-bottom: 1px solid #FCCE85;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #22211f;
+}
+
+.mini-cintainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #22211f;
+}
+
+.chapter-title {
+    margin-top: 20px;
+}
+
+.text-course {
+    margin-top: 30px;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+}
+
+.course-list > b {
+    display: block;
+    margin-bottom: 10px;    
+}
+
+.course-item {
+    margin: 0 0 20px 20px;
+}
 
 
 
