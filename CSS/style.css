@@ -8,7 +8,9 @@ html {
     scroll-behavior: smooth;
 }
 
-@view-transition { navigation: auto; }
+@view-transition {
+    navigation: auto;
+}
 
 a {
     text-decoration: none;
@@ -240,6 +242,9 @@ span {
 
 .popular-author-list {
     margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
 }
 
 .popular-author-list-scroll {
@@ -388,13 +393,13 @@ span {
 }
 
 .log-in-btn:hover {
-    transition: all 0.6s;
+    transition: all 0.1s;
     border: 1px solid #E58C0E;
     box-shadow: 0 0 10px 0 #E58C0E;
 }
 
 .reg-btn:hover {
-    transition: all 0.6s;
+    transition: all 0.1s;
     border: 1px solid #E58C0E;
     box-shadow: 0 0 10px 0 #E58C0E;
 }
@@ -416,12 +421,22 @@ span {
 
 .aside-item {
     list-style: none;
-    padding: 15px;
     width: 270px;
-    font-size: 1.2rem;
 }
 
-.aside-item:hover {
+.aside-item-link {
+    text-align: left;
+    display: flex;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #22211f;
+    color: #FFF;
+    border: none;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.aside-item-link:hover {
     background-color: #3d3d3d;
     transition: all 0.4s;
 }
@@ -460,13 +475,19 @@ span {
     margin-bottom: 40px;
 }
 
-.course-list > b {
+.course-list>b {
     display: block;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
 }
 
 .course-item {
-    margin: 0 0 20px 20px;
+    margin: 0 0 20px 25px;
+}
+
+.course-info-video {
+    min-width: 900px;
+    margin: 0 auto;
+    display: block;
 }
 
 
