@@ -38,7 +38,6 @@ span {
 .background {
     position: absolute;
     width: 100%;
-    height: 100vh;
     z-index: -1;
     box-shadow: 0 1px 80px 1px #0d0d0c;
 }
@@ -184,6 +183,7 @@ span {
     gap: 30px;
     margin: 0 auto 50px;
     width: 1290px;
+    min-height: 700px;
 }
 
 .catalog-link {
@@ -490,7 +490,15 @@ span {
     display: block;
 }
 
-
+.develop-text {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
 
 
 
