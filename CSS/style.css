@@ -500,12 +500,89 @@ span {
     font-weight: 700;
 }
 
+.info-user {
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+}
 
+.mini-info {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    background-color: #22211f;
+    border-radius: 35px;
+    padding: 20px;
+    width: 400px;
+    min-width: 400px;
+    max-width: 600px;
+}
 
+.avatar-user {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
 
+.left {
+    width: 70%;
+    text-align: center;
+}
 
+.nick-user {
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
 
+.confidential-data {
+    margin-top: 30px;
+    background-color: #22211f;
+    border-radius: 35px;
+    padding: 20px;
+    width: 1000px;
+    min-width: 400px;
+    max-width: 1200px;
+}
 
+.confidential-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+}
+
+.df {
+    display: flex;
+    align-items: center;
+    height: 70%;
+}
+
+.log-in-data {
+    font-weight: 500;
+    border-right: 2px solid #4d4d4d;
+    width: 50%;
+}
+
+.data-pay {
+    margin-left: 10px;
+    font-weight: 500;
+    text-align: end;
+    width: 50%;
+}
+
+.center {
+    cursor: default;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 50px;
+}
 
 
 .footer {
