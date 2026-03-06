@@ -460,6 +460,8 @@ span {
 }
 
 .mini-cintainer {
+    display: flex;
+    flex-direction: column;
     max-width: 1000px;
     margin: 0 auto;
     color: #22211f;
@@ -582,6 +584,20 @@ span {
     text-transform: uppercase;
     position: relative;
     top: 50px;
+}
+
+.end-course {
+    border: none;
+    border-radius: 25px;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 2rem;
+    margin: 20px auto;
+
+}
+
+.end-course:hover {
+    box-shadow: 0 0  10px 0 #ffffff;
 }
 
 

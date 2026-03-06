@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <script src="JS/search.js" defer></script>
+    <script src="JS/user.js" defer></script>
     <title>KNOWLY</title>
 </head>
 
@@ -36,10 +37,10 @@
                         <img src="IMAGES/avatar.jpg" alt="Фотография пользователя" class="avatar-user">
                     </div>
                     <div class="left">
-                        <h3 class="nick-user">Котолёт</h3>
+                        <h3 class="nick-user">Katcode</h3>
                         <div class="level-progress">
-                            <p class="level-progress-text">Уровень 0</p>
-                            <progress class="complexity" value="" max="100"></progress>
+                            <p id="shold" class="level-progress-text">Уровень 0</p>
+                            <progress id="progress-lvl" class="complexity" value="0" max="100"></progress>
                         </div>
                     </div>
                 </div>
@@ -47,8 +48,30 @@
                     <h5 class="center">Open</h5>
                 </div>
             </section>
+
         </div>
     </main>
+    <script>
+        'use strict'
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const levelText = document.getElementById('shold');
+            const progressBar = document.getElementById('progress-lvl');
+
+            const lvlNum = localStorage.getItem('lvlNum') || 0;
+            const lvlProgress = localStorage.getItem('lvlProgress') || 0;
+
+            if (levelText) {
+                levelText.innerHTML = `Уровень ${lvlNum}`;
+            }
+
+            if (progressBar) {
+                progressBar.value = lvlProgress;
+            }
+
+            console.log('Профиль загружен:', { lvlNum, lvlProgress });
+        });
+    </script>
 </body>
 
 </html>
