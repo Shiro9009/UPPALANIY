@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="JS/main.js" defer></script>
+    <script src="JS/logIn.js" defer></script>
     <title>KNOWLY</title>
 </head>
 
@@ -14,12 +14,14 @@
         <img src="IMAGES/log-in-background.png" alt="" class="log-in-background">
         <div class="center-log-ing">
             <form action="" class="log-in-form">
-                <input type="text" class="input-form" placeholder="Никнейм">
-                <input type="password" class="input-form" placeholder="Пароль">
+                <input id="logNick" type="text" class="input-form" placeholder="Никнейм">
+                <span class="error" id="errorNick"></span>
+                <input id="logPassword" type="password" class="input-form" placeholder="Пароль">
+                <span class="error" id="errorPassword"></span>
                 <div class="return-password">
                     <a href="return-password.html" class="return-password-link">Забыли пароль?</a>
                 </div>
-                <a href="profile.html" class="log-in-btn">Войти</a>
+                <a onclick="logInChek()" class="log-in-btn">Войти</a>
             </form>
         </div>
     </main>

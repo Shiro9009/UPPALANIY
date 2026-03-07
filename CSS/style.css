@@ -380,9 +380,11 @@ span {
     border-radius: 25px;
     margin: 0 auto;
     background-color: #da6b12;
+    cursor: default;
 }
 
 .reg-btn {
+    cursor: default;
     text-align: center;
     padding: 10px;
     width: 400px;
@@ -601,6 +603,10 @@ span {
     box-shadow: 0 0  10px 0 #ffffff;
 }
 
+.error {
+    color: #fff;
+    margin-bottom: 2px;
+}
 
 .footer {
     background-color: #22211f;
