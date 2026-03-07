@@ -92,3 +92,6 @@ function secret() {
                     </div>
             `;
 }
+
+const Users = JSON.parse(localStorage.getItem('arrUsers'));
+console.log(Users);

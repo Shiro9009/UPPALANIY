@@ -204,6 +204,7 @@ span {
     text-transform: uppercase;
     font-size: 3rem;
     margin-top: 60px;
+    cursor: default;
 }
 
 .catalog-cource-list {

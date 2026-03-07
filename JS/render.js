@@ -109,6 +109,28 @@ function renderCourse(courseArray) {
 
 renderCourse(courseArray);
 
+function allCourse() {
+    containerCourse.innerHTML = '';
+
+    for (let i = 0; i < courseArray.length; i++) {
+        const card = document.createElement('div');
+        card.className = 'catalog-list-link';
+
+        card.innerHTML =
+            `
+            <a item itemscope itemtype="https://schema.org/Course" href="${courseArray[i].link}" class="catalog-item">
+                <h3 itemprop="name" class="catalog-item-title">${courseArray[i].name}</h3>
+                <img itemprop="image" src="${courseArray[i].img}" alt="курс по программированию"
+                    style="width: 250px; min-height: 157.4px; border-radius: 25px;" class="catalog-item-img">
+                <p itemprop="author" class="author">${courseArray[i].author}</p>
+                <progress class="complexity" value="${courseArray[i].progress}" max="100"></progress>
+                <p class="complexity-text">сложность</p>
+            </a>
+        `;
+        containerCourse.appendChild(card);
+    }
+}
+
 function newCourse(courseArray) {
     containerCourse.innerHTML = '';
 

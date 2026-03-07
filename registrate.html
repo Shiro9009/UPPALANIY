@@ -5,19 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="JS/main.js" defer></script>
+    <script src="JS/registration.js" defer></script>
     <title>KNOWLY</title>
 </head>
 
 <body class="none-color">
     <main class="main">
-        <img src="IMAGES/log-in-background.png" alt="" class="log-in-background">
+        <img src="IMAGES/log-in-background.png" alt="Задний фон" class="log-in-background">
         <div class="center-log-ing">
             <form action="" class="reg-form">
-                <input type="text" class="input-form" placeholder="Введите никнейм">
-                <input type="email" class="input-form" placeholder="Введите почту">
-                <input type="password" class="input-form" placeholder="Введите пароль">
-                <a href="index.html" class="reg-btn">Зарегистрироваться</a>
+                <input id="nick" type="text" class="input-form" placeholder="Никнейм">
+                <span class="error" id="nameError"></span>
+                <input id="email" type="email" class="input-form" placeholder="Почта">
+                <span class="error" id="nameError"></span>
+                <input id="password" type="password" class="input-form" placeholder="Пароль">
+                <span class="error" id="nameError"></span>
+                <a onclick="registration()" class="reg-btn">Зарегистрироваться</a>
             </form>
         </div>
     </main>
