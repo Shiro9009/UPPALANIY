@@ -8,6 +8,7 @@
     <script src="JS/loader.js" defer></script>
     <script src="JS/search.js" defer></script>
     <script src="JS/user.js" defer></script>
+    <script src="JS/userName.js" defer></script>
     <title>KNOWLY</title>
 </head>
 
@@ -20,12 +21,14 @@
                 </a>
                 <div class="search-login-reg">
                     <input id="search" type="text" class="search-header">
-                    <button class="log-in">
-                        <a class="log-in-link" href="log-in.html">вход</a>
-                    </button>
-                    <button class="reg">
-                        <a href="registrate.html" class="reg-link">регистрация</a>
-                    </button>
+                    <div id="userName" class="userName">
+                        <button class="log-in">
+                            <a class="log-in-link" href="log-in.html">вход</a>
+                        </button>
+                        <button class="reg">
+                            <a href="registrate.html" class="reg-link">регистрация</a>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -38,7 +41,8 @@
                         <button onclick="loadChapter('chapter1')" class="aside-item-link">ГЛАВА 1 познание JS</button>
                     </li>
                     <li class="aside-item">
-                        <button onclick="loadChapter('chapter1.1')" class="aside-item-link">1.1 Настройка рабочего простарнства</button>
+                        <button onclick="loadChapter('chapter1.1')" class="aside-item-link">1.1 Настройка рабочего
+                            простарнства</button>
                     </li>
                     <li class="aside-item">
                         <button onclick="loadChapter('chapter1.2')" class="aside-item-link">1.2 Переменные</button>
@@ -61,7 +65,8 @@
                         <button onclick="loadChapter('chapter1.8')" class="aside-item-link">1.8 Фреймворки</button>
                     </li>
                     <li class="aside-item">
-                        <button onclick="loadChapter('chapter1.9')" class="aside-item-link">1.9 Что делать дальше?</button>
+                        <button onclick="loadChapter('chapter1.9')" class="aside-item-link">1.9 Что делать
+                            дальше?</button>
                     </li>
                 </ul>
             </aside>
@@ -115,4 +120,3 @@
 </body>
 
 </html>
-

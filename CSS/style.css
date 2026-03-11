@@ -75,6 +75,19 @@ span {
     gap: 80px;
 }
 
+.userName {
+    display: flex;
+    gap: 70px;
+
+}
+
+.userNickName {
+    background-color: #E58C0E;
+    padding: 2px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
 .search-header {
     border: none;
     outline: none;
@@ -496,7 +509,7 @@ span {
 }
 
 .develop-text {
-    display: flex;  
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 70vh;
@@ -541,7 +554,7 @@ span {
     font-size: 2rem;
     margin-bottom: 30px;
     overflow: hidden;
-    text-overflow: ellipsis; 
+    text-overflow: ellipsis;
 }
 
 .confidential-data {
@@ -600,7 +613,7 @@ span {
 }
 
 .end-course:hover {
-    box-shadow: 0 0  10px 0 #ffffff;
+    box-shadow: 0 0 10px 0 #ffffff;
 }
 
 .error {

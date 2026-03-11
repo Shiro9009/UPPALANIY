@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <script src="JS/search.js" defer></script>
     <script src="JS/user.js" defer></script>
+    <script src="JS/userName.js" defer></script>
     <title>KNOWLY</title>
 </head>
 
@@ -19,12 +20,14 @@
                 </a>
                 <div class="search-login-reg">
                     <input id="search" type="text" class="search-header">
-                    <button class="log-in">
-                        <a class="log-in-link" href="log-in.html">вход</a>
-                    </button>
-                    <button class="reg">
-                        <a href="registrate.html" class="reg-link">регистрация</a>
-                    </button>
+                    <div id="userName" class="userName">
+                        <button class="log-in">
+                            <a class="log-in-link" href="log-in.html">вход</a>
+                        </button>
+                        <button class="reg">
+                            <a href="registrate.html" class="reg-link">регистрация</a>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -37,7 +40,7 @@
                         <img src="IMAGES/avatar.jpg" alt="Фотография пользователя" class="avatar-user">
                     </div>
                     <div class="left">
-                        <h3 class="nick-user">Katcode</h3>
+                        <h3 id="nick-user" class="nick-user">Katcode</h3>
                         <div class="level-progress">
                             <p id="shold" class="level-progress-text">Уровень 0</p>
                             <progress id="progress-lvl" class="complexity" value="0" max="100"></progress>

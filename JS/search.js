@@ -91,10 +91,7 @@ function secret() {
                         </div>
                     </div>
             `;
-    localStorage.clear();
 }
 
 const Users = JSON.parse(localStorage.getItem('arrUsers'));
 console.log(Users);
-const User = JSON.parse(localStorage.getItem('locationUser'));
-console.log(User);

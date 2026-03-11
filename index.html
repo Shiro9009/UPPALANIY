@@ -8,6 +8,7 @@
     <script src="JS/scroll.js" defer></script>
     <script src="JS/render.js" defer></script>
     <script src="JS/search.js" defer></script>
+    <script src="JS/userName.js" defer></script>
     <title>KNOWLY</title>
 </head>
 
@@ -21,12 +22,14 @@
                 </a>
                 <div class="search-login-reg">
                     <input id="search" type="text" class="search-header">
-                    <button class="log-in">
-                        <a class="log-in-link" href="log-in.html">вход</a>
-                    </button>
-                    <button class="reg">
-                        <a href="registrate.html" class="reg-link">регистрация</a>
-                    </button>
+                    <div id="userName" class="userName">
+                        <button class="log-in">
+                            <a class="log-in-link" href="log-in.html">вход</a>
+                        </button>
+                        <button class="reg">
+                            <a href="registrate.html" class="reg-link">регистрация</a>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -76,8 +79,7 @@
                     </div>
                     <div class="popular-author-item">
                         <div class="hidden-box">
-                            <img src="IMAGES/author-Bessmerty.jpg" alt="фотография автора курса"
-                                class="photo-author">
+                            <img src="IMAGES/author-Bessmerty.jpg" alt="фотография автора курса" class="photo-author">
                         </div>
                         <div class="popular-author-text">
                             <h3 class="popular-author-name">Бессмертный Андрей Витальевич</h3>
@@ -86,8 +88,7 @@
                     </div>
                     <div class="popular-author-item">
                         <div class="hidden-box">
-                            <img src="IMAGES/author-panaseny.jpg" alt="фотография автора курса"
-                                class="photo-author">
+                            <img src="IMAGES/author-panaseny.jpg" alt="фотография автора курса" class="photo-author">
                         </div>
                         <div class="popular-author-text">
                             <h3 class="popular-author-name">Панасеня Владимир Васильевич</h3>
@@ -115,3 +116,8 @@
 </body>
 
 </html>
+
+<!-- 
+<div class="user-out">
+    <h2 class="userNickName">${localName.name}</h2>
+</div> -->

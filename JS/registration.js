@@ -11,7 +11,7 @@ function showError(id, message) {
 function registration() {
     let arrUsers = JSON.parse(localStorage.getItem('arrUsers')) || [];
     for (let i = 0; i < arrUsers.length; i++) {
-        if (inputNickname.value.toLowerCase() === arrUsers[i].name) {
+        if (inputNickname.value.toLowerCase() === arrUsers[i].name.toLowerCase()) {
             showError("nameError", "Такой ник уже существует");
             inputNickname.style.margin = '0 0 10px 0'; 
             return
