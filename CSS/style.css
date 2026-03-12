@@ -83,9 +83,10 @@ span {
 
 .userNickName {
     background-color: #E58C0E;
-    padding: 2px 20px;
+    padding: 0 30px;
     border-radius: 20px;
-    font-weight: 600;
+    font-weight: 500;
+    border: 1px solid #ffb37a;
 }
 
 .search-header {
@@ -620,6 +621,20 @@ span {
     color: #fff;
     margin-bottom: 2px;
 }
+
+.logOut-profile {
+    border: none;
+    background-color: #22211f;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 20px;
+    padding: 5px 20px;
+    position: relative;
+    top: 20px;
+    left: 120px;
+}
+
+
 
 .footer {
     background-color: #22211f;

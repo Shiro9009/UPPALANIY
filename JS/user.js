@@ -16,3 +16,7 @@ function lvlPush() {
 
     window.location.href = 'profile.html';
 }
+
+function logOut() {
+    localStorage.clear('locationUser');
+}
