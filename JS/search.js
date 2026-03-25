@@ -95,3 +95,7 @@ function secret() {
 
 const Users = JSON.parse(localStorage.getItem('arrUsers'));
 console.log(Users);
+
+function href() {
+    window.location.href="catalog.html";
+}

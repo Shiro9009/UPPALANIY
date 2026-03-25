@@ -202,11 +202,18 @@ span {
 
 .catalog-link {
     display: block;
-    margin: -25px 0 30px;
+    margin: -13px 0 30px;
     font-size: 2.5rem;
-    color: #22211f;
-    font-weight: 600;
-    border-bottom: 3px solid #000;
+    color: #E58C0E;
+    padding: 3px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #13130e;
+}
+
+.catalog-link:hover {
+    color: #fff;
+    transition: all 0.3s;
 }
 
 .popular-author {

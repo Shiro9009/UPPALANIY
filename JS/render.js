@@ -1,6 +1,7 @@
 'use strict'
 
 const containerCourse = document.getElementById('catalog-list');
+const filterLinks = document.querySelectorAll('.catalog-cource-list-link');
 
 const courseArray = [
     {
@@ -19,7 +20,7 @@ const courseArray = [
         author: 'Никита Мацюк',
         img: 'IMAGES/python.jpg',
         progress: 60,
-        category: 'Beckend',
+        category: 'Backend',
         isNew: false,
         link: 'development-python.html'
     },
@@ -107,6 +108,19 @@ function renderCourse(courseArray) {
     }
 }
 
+// Функция для сброса цвета всех фильтров
+function resetFilterColor() {
+    filterLinks.forEach(link => {
+        link.style.color = '';
+    });
+}
+
+// Функция для установки активного цвета
+function setActiveFilter(activeLink) {
+    resetFilterColor();
+    activeLink.style.color = '#F2D475';
+}
+
 renderCourse(courseArray);
 
 function allCourse() {
@@ -129,6 +143,8 @@ function allCourse() {
         `;
         containerCourse.appendChild(card);
     }
+    
+    resetFilterColor();
 }
 
 function newCourse(courseArray) {
@@ -152,8 +168,10 @@ function newCourse(courseArray) {
         `;
             containerCourse.appendChild(card);
         }
-
+        
     }
+    
+    setActiveFilter(event.currentTarget);
 }
 
 function frontend(courseArray) {
@@ -179,6 +197,8 @@ function frontend(courseArray) {
         }
 
     }
+    
+    setActiveFilter(event.currentTarget);
 }
 
 function backend(courseArray) {
@@ -204,6 +224,8 @@ function backend(courseArray) {
         }
 
     }
+    
+    setActiveFilter(event.currentTarget);
 }
 
 function dataBase(courseArray) {
@@ -229,6 +251,8 @@ function dataBase(courseArray) {
         }
 
     }
+    
+    setActiveFilter(event.currentTarget);
 }
 
 function trande(courseArray) {
@@ -253,4 +277,6 @@ function trande(courseArray) {
             containerCourse.appendChild(card);
         }
     }
+    
+    setActiveFilter(event.currentTarget);
 }
