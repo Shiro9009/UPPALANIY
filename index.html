@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/scroll.js" defer></script>
+    <script src="JS/render.js" defer></script>
+    <script src="JS/search.js" defer></script>
+    <script src="JS/userName.js" defer></script>
+    <title>KNOWLY</title>
+</head>
+
+<body>
+    <img src="IMAGES/background.jpg" alt="задний фон" class="background">
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="link-title-site">
+                    <h1 class="title-site">KNOWLY</h1>
+                </a>
+                <div class="search-login-reg">
+                    <input id="search" type="text" class="search-header">
+                    <div id="userName" class="userName">
+                        <button class="log-in">
+                            <a class="log-in-link" href="log-in.html">вход</a>
+                        </button>
+                        <button class="reg">
+                            <a href="registrate.html" class="reg-link">регистрация</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="start">
+            <div class="container">
+                <p class="start-text">
+                    <span>НАЧНИ</span> СВОЙ ОНЛАЙН КУРС <br> по ПРОГРАММИРОВАНИЮ <br> и ИЗМЕНИ СВОЮ <span>ЖИЗНЬ</span>
+                </p>
+                <a href="#catalog" class="start-link">
+                    начать
+                </a>
+            </div>
+        </section>
+        <section id="catalog" class="catalog">
+            <div class="container">
+                <h2 class="catalog-title">популярные курсы</h2>
+                <button onclick="href()" class="catalog-link">каталог</button>
+                <div id="catalog-list" class="catalog-list"></div>
+                <a href="#" class="catalog-link"></a>
+            </div>
+        </section>
+        <section class="popular-author">
+            <div class="container">
+                <h2 class="popular-author-title">авторы самых популярных курсов</h2>
+            </div>
+            <div class="popular-author-list">
+                <div class="popular-author-list-scroll">
+                    <div class="popular-author-item">
+                        <div class="hidden-box">
+                            <img src="IMAGES/author-gagilyv.jpg" alt="фотография автора курса" class="photo-author">
+                        </div>
+                        <div class="popular-author-text">
+                            <h3 class="popular-author-name">Гагилев Алексей Евгеньевич</h3>
+                            <p class="count-complated-course">1 933 людей прошедшых курс</p>
+                        </div>
+                    </div>
+                    <div class="popular-author-item">
+                        <div class="hidden-box">
+                            <img src="IMAGES/author-Boyko.jpg" alt="фотография автора курса" class="photo-author">
+                        </div>
+                        <div class="popular-author-text">
+                            <h3 class="popular-author-name">Бойко Андрей Юрьевич</h3>
+                            <p class="count-complated-course">39 521 людей прошедшых курс</p>
+                        </div>
+                    </div>
+                    <div class="popular-author-item">
+                        <div class="hidden-box">
+                            <img src="IMAGES/author-Bessmerty.jpg" alt="фотография автора курса" class="photo-author">
+                        </div>
+                        <div class="popular-author-text">
+                            <h3 class="popular-author-name">Бессмертный Андрей Витальевич</h3>
+                            <p class="count-complated-course">29 895 людей прошедшых курс</p>
+                        </div>
+                    </div>
+                    <div class="popular-author-item">
+                        <div class="hidden-box">
+                            <img src="IMAGES/author-panaseny.jpg" alt="фотография автора курса" class="photo-author">
+                        </div>
+                        <div class="popular-author-text">
+                            <h3 class="popular-author-name">Панасеня Владимир Васильевич</h3>
+                            <p class="count-complated-course">29 895 людей прошедшых курс</p>
+                        </div>
+                    </div>
+                    <div class="popular-author-item">
+                        <div class="hidden-box">
+                            <img src="IMAGES/author-zikov.jpg" alt="фотография автора курса" class="photo-author">
+                        </div>
+                        <div class="popular-author-text">
+                            <h3 class="popular-author-name">Зыков Михаил Михайлович</h3>
+                            <p class="count-complated-course">29 895 людей прошедшых курс</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2026 KNOWLY. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
