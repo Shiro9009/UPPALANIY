@@ -576,6 +576,7 @@ span {
 .info-user {
     display: flex;
     gap: 80px;
+    margin-top: 150px;
     justify-content: space-between;
 }
 
