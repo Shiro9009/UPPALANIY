@@ -51,6 +51,7 @@ span {
     max-width: 1500px;
     margin: 0 auto;
     display: flex;
+    position: relative;
 }
 
 .header-inner {
@@ -441,6 +442,7 @@ span {
     border: 1px solid #f8a723;
     min-height: 100vh;
     border-bottom: none;
+    transition: all 0.3s ease;
 }
 
 .aside-item {
@@ -463,6 +465,51 @@ span {
 .aside-item-link:hover {
     background-color: #3d3d3d;
     transition: all 0.4s;
+}
+
+/* Кнопка сворачивания меню */
+.aside-toggle {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #22211f;
+    color: #E58C0E;
+    border: none;
+    border-bottom: 1px solid #f8a723;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.aside-toggle:hover {
+    background-color: #E58C0E;
+    color: #22211f;
+}
+
+/* Скрытое меню */
+.aside-hidden {
+    display: none;
+}
+
+/* Кнопка показа меню */
+.show-sidebar-btn {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: 100;
+    background-color: #22211f;
+    color: #E58C0E;
+    border: 1px solid #f8a723;
+    font-size: 1.5rem;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.show-sidebar-btn:hover {
+    background-color: #E58C0E;
+    color: #22211f;
 }
 
 .course-info {
@@ -640,8 +687,6 @@ span {
     top: 20px;
     left: 120px;
 }
-
-
 
 .footer {
     background-color: #22211f;
